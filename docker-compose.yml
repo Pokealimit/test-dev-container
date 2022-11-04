@@ -1,0 +1,16 @@
+version: '3'
+services:
+  test-dev-container:
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null
+    image: dev-test-container:22.04
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        uid: $UID
+        gid: $GID
+    
+    volumes:
+      - $HOME/repo/test-dev-container:/home/user/test-dev-container
