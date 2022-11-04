@@ -8,9 +8,7 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile
-      args:
-        uid: $UID
-        gid: $GID
     
+    # user: "${UID}:${GID}"
     volumes:
       - $HOME/repo/test-dev-container:/home/user/test-dev-container

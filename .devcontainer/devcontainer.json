@@ -5,7 +5,7 @@
 	"name": "test-dev-container",
 	
 	// for loading image without using dockerfile (can only have either image or dockerfile)
-	// "image": "ros:noetic-ros-base",
+	// "image": "ubuntu:22.04",
 
 	// if using docker-compose
 	"dockerComposeFile": "../docker-compose.yml",
