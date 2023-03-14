@@ -9,6 +9,6 @@ services:
       context: .
       dockerfile: docker/Dockerfile
     
-    # user: "${UID}:${GID}"
+    user: "${UID}:${GID}"
     volumes:
       - $HOME/repo/test-dev-container:/home/user/test-dev-container
