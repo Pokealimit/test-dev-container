@@ -1,10 +1,11 @@
 version: '3'
 services:
-  test-dev-container:
+  test-ros-dev-container:
     stdin_open: true
     tty: true
-    command: tail -f /dev/null
-    image: dev-test-container:22.04
+    # command: tail -f /dev/null
+    command: zsh -c "roscore"
+    image: dev-ros-test-container:noetic
     build:
       context: .
       dockerfile: docker/Dockerfile

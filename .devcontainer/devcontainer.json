@@ -2,14 +2,14 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
 {
 
-	"name": "test-dev-container",
+	"name": "test-ros-dev-container",
 	
 	// for loading image without using dockerfile (can only have either image or dockerfile)
 	// "image": "ubuntu:22.04",
 
 	// if using docker-compose
 	"dockerComposeFile": "../docker-compose.yml",
-	"service": "test-dev-container",
+	"service": "test-ros-dev-container",
 	"workspaceFolder": "/home/user/test-dev-container",
 	"shutdownAction": "stopCompose",
 
